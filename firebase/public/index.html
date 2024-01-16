@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player 1 Window</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+</head>
+<body>
+    <h2>Player 1 Controls</h2>
+    <div id="container">
+        <button data-action="move" data-direction="left" style="width: 120px; height: 120px;">Left</button><br>
+        <button data-action="move" data-direction="down" style="width: 100px; height: 100px;">Down</button>
+        <button data-action="move" data-direction="up" style="width: 100px; height: 100px;">Up</button><br>
+        <button data-action="move" data-direction="right" style="width: 120px; height: 120px;">Right</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "194485468546",
+    "project_id": "embeddedauc2",
+    "storage_bucket": "embeddedauc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194485468546:android:4a19bf3d1fc80dda63239b",
+        "android_client_info": {
+          "package_name": "com.example.boidsgame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbVaWDqYK5Y4DPX55k7HSskSBlLtoZMyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

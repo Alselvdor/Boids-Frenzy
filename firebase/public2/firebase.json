@@ -1,0 +1,25 @@
+{
+    "hosting": [
+      {
+        "site": "default",
+        "public": "public",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      },
+      {
+        "site": "player2-test",
+        "public": "public-player2",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+    ]
+  }
+  

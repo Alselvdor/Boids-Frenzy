@@ -1,0 +1,6 @@
+{
+  "hosting": {
+     "site": "player2-test",
+     "public": "public-player2" // This should match the directory name
+  }
+}

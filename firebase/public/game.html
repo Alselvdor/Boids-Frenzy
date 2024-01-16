@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pygame Controls</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <style>
+        button {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Player 1 Controller</h2>
+    <div id="container">
+        <button onclick="sendCommand('left')" style="width: 120px; height: 120px;">Left</button><br>
+        <button onclick="sendCommand('down')" style="width: 100px; height: 100px;">Down</button>
+        <button onclick="sendCommand('up')" style="width: 100px; height: 100px;">Up</button><br>
+        <button onclick="sendCommand('right')" style="width: 120px; height: 120px;">Right</button>
+    </div>
+
+    <script>
+        const sendCommand = (direction) => {
+            fetch("/move", {
+                method: "POST",
+                headers: {'Content-Type': 'application/json'}, 
+                body: JSON.stringify({direction})
+            }).then(res => {
+                console.log("Request complete! response:", res);
+            });
+        }
+    </script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src ="./mail.js"></script>
+</body>
+</html>

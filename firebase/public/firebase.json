@@ -1,0 +1,24 @@
+{
+    "hosting": [
+      {
+        "site": "player1-controll",
+        "public": "public",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      },
+      {
+        "site": "player1-controll",
+        "public": "public",
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+    ]
+  }

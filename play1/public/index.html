@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player 1 Window</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <!-- Add Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+</head>
+
+<body>
+    <h2>Player 1 Controls</h2>
+    <div id="container">
+        <button data-action="move" data-direction="left" style="width: 120px; height: 120px;">Left</button><br>
+        <button data-action="move" data-direction="down" style="width: 100px; height: 100px;">Down</button>
+        <button data-action="move" data-direction="up" style="width: 100px; height: 100px;">Up</button><br>
+        <button data-action="move" data-direction="right" style="width: 120px; height: 120px;">Right</button>
+    </div>
+    <script type="module" src="./mail.js"></script>
+
+    <script type="module">
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyArHu1yZuCafCW2SJS9G3FjT0ztJitsg1c",
+            authDomain: "embedded-auc.firebaseapp.com",
+            databaseURL: "https://embedded-auc-default-rtdb.firebaseio.com",
+            projectId: "embedded-auc",
+            storageBucket: "embedded-auc.appspot.com",
+            messagingSenderId: "14765850887",
+            appId: "1:14765850887:web:28b8b4ccdc8e4a9ee205a2"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</body>
+
+</html>
